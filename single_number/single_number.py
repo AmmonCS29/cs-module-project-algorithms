@@ -2,10 +2,12 @@
 Input: a List of integers where every int except one shows up twice
 Returns: an integer
 '''
+
+## traverse through list and find the interger that is solely by itself. 
+# Tools: length, indexed, looped through, comparison operators, binary search, linear search 
 def single_number(arr):
     # Your code here
-
-    pass
+    return 2 * sum(set(arr)) - sum(arr)
 
 
 if __name__ == '__main__':
